@@ -7,6 +7,7 @@ function largestSubarraySum(array){
     current = Math.max((currentIndex + current), 0)
     max = Math.max(current, max)
   }
+  return max
 }
 
 
