@@ -1,12 +1,12 @@
 
-function largestSubarraySum(array) {
-  sum = []
- for (i = 0; i > array.length; i++) {
-   for (let j = i + 1; j < array.length; j++) {
-     let tester = array[i] + array[j]
-     if (tester >  )
-   }
- }
+function largestSubarraySum(array){
+  let current = 0
+  let max = 0
+  for (let i = 0; i < array.length; i++) {
+    let currentIndex = array[i]
+    current = Math.max((currentIndex + current), 0)
+    max = Math.max(currentIndex, max)
+  }
 }
 
 
