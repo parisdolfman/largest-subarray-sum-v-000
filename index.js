@@ -5,7 +5,7 @@ function largestSubarraySum(array){
   for (let i = 0; i < array.length; i++) {
     let currentIndex = array[i]
     current = Math.max((currentIndex + current), 0)
-    max = Math.max(currentIndex, max)
+    max = Math.max(current, max)
   }
 }
 
